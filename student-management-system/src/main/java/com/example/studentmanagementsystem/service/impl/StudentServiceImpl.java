@@ -5,7 +5,9 @@ import com.example.studentmanagementsystem.repository.StudentRepository;
 import com.example.studentmanagementsystem.service.StudentService;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -41,6 +43,11 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public void deleteStudentById(UUID id) {
         studentRepository.deleteById(id);
+
     }
+
+
+
+
 
 }
